@@ -9,7 +9,7 @@ for i in 1..sayi
   puts ""
   puts ""
   puts ""
-  puts "                                                                         #{i} - #{tesbih}                                                                                                                                   "
+  puts "    #{i} - #{tesbih}                                                                                                                                   "
   puts ""
   puts ""
   puts ""
@@ -29,10 +29,22 @@ d=gets.chomp
 end
 
 system("clear")
-tesbihler=["Allah","Allahu Ekber","Subhan Allah"]
+tesbihler=["Allah","Allahu Ekber","Subhan Allah","La İlahe İllallah Muhammedür Resulullah","Allahüme Salli Ala Seyyidina Muhammedin Ve Ala Ali Seyyidina Muhammed"]
 puts "***************************************************************************************************************************************************"
 puts "******************************************************************Tesbih Çekme Programı************************************************************"
 puts "***************************************************************************************************************************************************"
+
+puts ""
+puts ""
+puts ""
+puts ""
+puts ""
+puts "1- 100 kere 'Estağfirullah Elhamdülillah.'"
+d=gets.chomp
+tesbih_cek(100,"Estağfirullah Elhamdülillah.")
+puts "2- 100 kere 'Allahüme Salli Ala Seyyidina Muhammedin Ve Ala Ali Seyyidina Muhammed.'"
+d=gets.chomp
+tesbih_cek(100,"Allahüme Salli Ala Seyyidina Muhammedin Ve Ala Ali Seyyidina Muhammed.")
 
 s=1
 
@@ -42,6 +54,7 @@ puts ""
 puts ""
 puts ""
 puts ""
+
 for i in 0..(tesbihler.length-1)
   met=tesbihler[i]
   r=i+1
@@ -49,11 +62,11 @@ for i in 0..(tesbihler.length-1)
 end
 puts ""
 puts ""
-puts "Lütfen Tesbihin Numarasını Girin:"
+puts "3-Lütfen Tesbihin Numarasını Girin:"
 tesbih = gets.chomp
 tesbih= tesbih.to_i - 1
 tesbih=tesbihler[tesbih]
-puts "Lütfen Kaç Kere Çekeceğinizi Yazın:"
+puts "4-Lütfen Kaç Kere Çekeceğinizi Yazın:"
 sayi=gets.chomp
 sayi=sayi.to_i
 tesbih_cek(sayi,tesbih)
